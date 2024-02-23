@@ -41,7 +41,7 @@ public class Function {
         } else {
 
             final String body = request.getBody().get();
-            // produce event
+            // produce event test
             publishEvents(body);
             return request.createResponseBuilder(HttpStatus.OK)
                     .header("Content-Type", "application/json")
